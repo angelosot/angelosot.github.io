@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html>
+<title>Angelos Sotiriou </title>
+<meta name="description" content="width=device-width, initial-scale=1, ">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.mySlides {display:none}
+.modal {
+ display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 50%;
+    overflow: auto; 
+	}
+	.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.3s;
+  animation-name: zoom;
+  animation-duration: 0.3s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+ body {
+    background-color:  #lightgrey;
+}
+
+#panel, .flip {
+     text-align: center;
+    background-color: #eeeeee;
+    color: grey;   
+    margin: auto;
+}
+
+#panel {
+    display: none;
+}
+
+
+</style>
+<body> 
+
+<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-large w3-padding w3-display-topmiddle" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+ <div class="w3-bar-block w3-center">
+    <a href="index.html #Ανάλυση Περιοχής" class="w3-bar-item w3-button w3-text-grey w3-small w3-hover-black">Ανάλυση Περιοχής</a>
+    <a href="index.html #Απτικοί Χάρτες" class="w3-bar-item w3-button w3-text-grey w3-small w3-hover-black">Απτικοί Χάρτες</a>
+    <a href="harmonographies.html #Περίοδος Συγκομηδής" class="w3-bar-item w3-button w3-text-grey w3-small w3-hover-black">Περίοδος Συγκομηδής</a>
+	<a href="harmonographies.html #Αρμονογραφίες" class="w3-bar-item w3-button w3-text-grey w3-small w3-hover-black">Αρμονογραφίες</a>
+    <a href="harmonographies.html #Aνεμογραφίες" class="w3-bar-item w3-button w3-text-grey w3-small w3-hover-black">Aνεμογραφίες</a>
+    <a href="observatory.html #Το Παρατηρητηριο" class="w3-bar-item w3-button w3-text-grey w3-small w3-hover-black">Το Παρατηρητηριο </a>
+	
+
+
+  </div>
+  
+  <p class="w3-text-grey w3-center w3-small w3-padding ">Καθώς απλώνεται το τοπίο της λιμνοθάλασσας. Τα νερά της, έχουν μεγάλη συγκέντρωση  σε αλάτι και ιώδιο, θεωρούνται από πολλούς ιαματικά για ρευματικές παθήσεις, δερματικές και άλλες ασθένειες.
+
+Έτσι, πολλοί ντόπιοι αλλά και επισκέπτες, άνθρωποι κυρίως ηλικιωμένοι, αναζητούν στη λιμνοθάλασσα ανακούφιση και θεραπεία. Καταφθάνουν σε συγκεκριμένες περιοχές, αλείφουν τα σώματά τους με λάσπη που συγκεντρώνουν από το βυθό της λιμνοθάλασσας και μένουν για ώρα ακίνητοι  στον καλοκαιρινό ήλιο αφήνοντας  τη λάσπη να ενεργήσει θεραπευτικά.
+Η άγνοια ή η αδιαφορία για την παραδοσιακή ιατρική, η επιθυμία για ανακούφιση από τον πόνο, η ελπίδα για αιώνια νιότη ή απλά η ανάγκη για μια μικρή εκδρομή και ένα μπάνιο είναι οι συνηθέστεροι λόγοι για αυτή την παράξενη κοινωνική συνάθροιση .
+Oι ανθρώπινες φιγούρες καταμεσής στο απέραντο, άδειο, σχεδόν σεληνιακό, τοπίο της λιμνοθάλασσας. Σε ένα τοπίο έξω από το χρόνο.
+Ανθρώπινες  φιγούρες άλλοτε μοναχικές άλλοτε σε μικρές παρέες δημιουργούν σχέσεις παράξενες.  
+Σώματα καλυμμένα από τη λάσπη. σε στάσεις ανοίκειες σαν μια αρχέγονη τελετή. Σώματα που ο χρόνος έχει τραυματίσει αλλά ακόμα αντιστέκονται.
+
+το σουρεαλιστικό θέαμα αποκαλύπτει τελικά ένα κόσμο ανείδωτο. </p>
+
+
+  <p class="w3-text-grey w3-center w3-small w3-padding ">Η επίσκεψή μου στο site συνέπεσε με την ανάγνωση των αρχείων του Robert Smithson. Τα αποσπάσματα που θα αναφέρω γράφτηκαν για την λιμνη Γιουτα ενώ οι φωτογραφίες είναι από το site
+
+
+O Τζον μπεργκερ σχολιάζει
+“Η σχεση μεταξυ του τι βλεπουμε και του τι γνωριζουμε δεν ειναι ποτε συγκεκριμενη. 
+Κάθε βράδυ βλέπουμε τον ήλιο να δύει. Γνωρίζουμε πως η Γη απομακρύνεται από αυτόν.
+Η γνώση, η ερμηνεία δεν αντιστοιχεί ποτέ στο θέαμα. Το χάσμα μεταξύ των λέξεων και της παρατήρησης.”  
+
+
+Σε αυτη τη βάση το τοπίο επαναπροσδιορίζεται και ερευναται η σχέση μεταξύ των αισθήσεων και των ήδη εγγεγραμμένων γνώσεων.
+
+Έτσι γεννιούνται ερωτήματα γύρω από την βαρύτητα και την έντονη άνωση λόγω του άλατος.
+
+Τους κυματισμούς του νερού και την επιφάνεια άλατος που αφηνει όπου αυτό ακουμπάει. 
+
+Τον άνεμο, την πορεία που διαγράφει και τους ήχους που παράγει. </p>
+
+
+<p class="w3-text-grey w3-center w3-small w3-padding "> Ο Rudolf Arnheim λέει χαρακτηριστικά
+“η δημιουργία εικόνων, δεν ξεκινά από την οπτική προβολή του αναπαριστώμενου αντικειμένου, αλλά είναι ένα ισοδύναμο, που αποδίδεται με τις ιδιότητες ενός ιδιαίτερου καλλιτεχνικού μέσου, των χαρακτηριστικών που παρατηρούνται στο αντικείμενο.
+Η οπτική μορφή υποβάλλεται από ό,τι γίνεται ορατό, αλλά δεν μπορεί να ληφθεί άμεσα από αυτό.”
+
+
+Ο Αντρει Ταρκόφσκι σχολιάζει για το χρόνο
+   
+“Ο κυρίαρχος, παντοδύναμος παράγοντας της κινηματογραφικής εικόνας είναι ο ρυθμός με τον οποίο εκφράζει τη  πορεία του χρόνου στο κάδρο.”
+
+“Η εικόνα είναι αδιαίρετη και φευγαλέα, βασίζεται στην συνείδηση μας και στον αληθινό κόσμο, τον οποίο επιδιώκει να εκφράσει” 
+
+“Ο καλλιτέχνης, αυτός ο sui generis ιχνευτής του απόλυτου, τα εκφράζει δημιουργώντας την εικόνα. Η εικόνα προσφέρει μια γνώση του απείρου: το αιώνιο μες το πεπερασμένο, το πνέυμα στην ύλη, το απεριόριστο με συγκεκριμένη μορφή.”
+
+
+
+Σε ένα απόσπασμα, ο Μίλαν Κούντερα λεει
+"Ας πάρουμε μια όσο το δυνατόν πιο κοινότοπη κατάσταση:
+κάποιος περπατάει στο δρόμο. Ξαφνικά θέλει να θυμηθεί κάτι, αλλά του διαφεύγει η ανάμνηση. Εκείνη τη στιγμή, μηχανικά, επιβραδύνει το βήμα του.
+
+Αντιθέτως, κάποιος που προσπαθεί να ξεχάσει ένα δυσάρεστο περιστατικό που έζησε πριν από λίγο, επιταχύνει εν αγνοία του το βάδισμά του, σαν να θέλει να απομακρυνθεί γρήγορα από κάτι πού, χρονικά, βρίσκεται ακόμα πολύ κοντά του.
+Στα υπαρξιακά μαθηματικά αυτή η εμπειρία
+παίρνει τη μορφή δύο στοιχειωδών εξισώσεων:
+
+
+
+ο βαθμός της βραδύτητας είναι ευθέως ανάλογος με την
+ένταση της μνήμης: ο βαθμός της ταχύτητας είναι
+ευθέως ανάλογος με την ένταση της λήθης.
+
+
+Έχει κανείς την τάση να βλέπει στους χάρτες πράγματα που δεν υπάρχουν,
+λέει όπως αναφέραμε πριν ο Σμιθσον </p>
+
+
+
+<p class="w3-text-grey w3-center w3-small w3-padding "> Τρεις χάρτες της ίδιας περιοχής διαφορετικών χρονικών περιόδων.
+
+Ο Λιμενοδείκτης, κοινώς πορτολάνος, είναι ένα ναυτιλιακό βοήθημα, βιβλίο, περισσότερο πλοηγικού χαρακτήρα, που περιέχει συνοπτικά λεπτομερείς ναυτικούς χάρτες όρμων, λιμένων, διαύλων κ.λπ. με ιδιαίτερες οδηγίες που ενδιαφέρουν τους ναυτιλομένους
+
+Σχεδόν αδύνατον να αναγνωρίσει κανείς οπτικά κοινά γεωγραφικά σημεία με τον πορτολάνο καθώς εδώ η απεικονιση του ιστορικού γεγονότος της ναυμαχίας δίνει έμφαση στα παρατεταγμένα πλοία. Μία υδάτινη καταγραφή, όπου το πλήρες είναι η θάλασσα και το κενό χωρίζουν οι ακτογραμμές.
+
+Αρκετά πιο πρόσφατος χάρτης ενός ταξιδιώτη ερευνητή, προσεγγίζει περισσότερο τα τοπωνυμια και την εικόνα των χαρτών που γνωρίζουμε σήμερα
+
+
+Ο σημερινός χάρτης του site, των χωροθετημένων αλατοπηγίων, με τις διαβαθμίσεις των υδάτων, των καναλιών, της λιμνοθάλασσας και την νήσο της φοινικιάς.
+Η Φοινικιά αποτέλεσε, όπως λέγεται, τον αγαπημένο προορισμό του Λόρδου Βύρωνα για ξεκούραση, κατά την διαμονή του στη περιοχή.
+
+Ο πολιτισμός των Ίνουιτ δημιούργησε απτικούς χάρτες των ακτογραμμών της Γροιλανδίας σκαλίζοντας ξύλα στην κλίμακα του χεριού. Τους χάρτες αυτούς δεν μπορείς να τους δεις αλλά τα δαχτυλα των χεριών σου ταξιδεύουν στις ξύλινες ακμές παράλληλα με το σώμα σου. Σε ένα μέρος της Γης όπου η νύχτα διαρκεί περισσότερο η απτική αίσθηση κυριαρχεί στην περιπλάνηση των ανθρώπων. 
+
+Στην προσωπική αναζήτηση του site, οι έννοιες της παρωδικότητας του χρόνου, η αναζήτηση του προσανατολισμού, η διερεύνηση του οπτικού και η ατέρμονος κίνηση του τοπίου καθόρισαν τις προσλαμβάνουσες.
+
+Οι απτικοί χάρτες αποτελούν υπενθύμιση προς συνεχή αναζήτηση και μετάφραση των αισθητηριακών προσλήψεων
+
+Ένα αντικείμενο που συνοδεύει τον περιπατητή και την εμπειρία της ύπαρξης </p>
+  
+</nav>
+
+
+
+<div class="w3-container">
+<img src="images/img2.jpg" alt="το νησι" style="width:100%">
+</div>
+
+<div class="w3-opacity w3-center w3-margin-top">
+<span class="w3-button w3-xlarge w3-lightgrey w3-center" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+</div>
+
+<div class="w3-content">
+  <div class="w3-container w3-center w3-padding-32" id="Ανάλυση Περιοχής" >
+  <h2 class="w3-border-bottom w3-center w3-display-top">Αρμονογραφίες, ανεμογραφίες</h2>
+  <p class="w3-opacity w3-small w3-center"> Και άλλες εφήμερες κατασκευές</p>
+  </div> 
+</div>
+
+  
+
+
+<div class="w3-container">
+<img src="images/img1.jpg" alt="το νησι" style="width:100%">
+</div>
+
+
+ <div class="w3-row  w3-padding-64">
+  <div class="w3-container w3-third">
+    <p> </p>
+  </div>
+  <div class="w3-container w3-third w3-center w3-padding-32" >
+  <h2 class="w3-border-bottom w3-display-top">  </h2>
+  </div>
+</div>
+<div class="w3-row  w3-padding-32">
+  <div class="w3-container w3-third">
+    <p> </p>
+  </div>
+  <div class="w3-container w3-third w3-center" >
+  <h2 class="w3-border-bottom w3-display-top">  </h2>
+  </div>
+</div>
+  
+<p class="w3-opacity w3-small w3-center"> The Bathers by Vassilis Zaverdas</p>
+    
+<div class="w3-row-padding">
+  <div class="w3-third">
+   
+      <div class="w3-card-2">
+       <img src="images/1.jpg" style="width:100%;cursor:pointer" 
+       onclick="onClick(this)" class="w3-hover-grayscale">      
+      </div>
+  </div>
+  <div class="w3-third">
+      <div class="w3-card-2">
+       <img src="images/2.jpg" style="width:100%;cursor:pointer" 
+       onclick="onClick(this)" class="w3-hover-grayscale">        
+      </div>
+  </div> 
+  <div class="w3-third">
+    <div class="w3-card-2">
+      <img src="images/3.jpg" style="width:100%;cursor:pointer" 
+      onclick="onClick(this)" class="w3-hover-grayscale">       
+     </div>
+  </div>
+</div>  
+
+
+
+  
+ <div class="w3-row-padding w3-margin-top">
+	<div class="w3-third">
+       <div class="w3-card-2">
+        <img src="images/4.jpg" style="width:100%;cursor:pointer" 
+        onclick="onClick(this)" class="w3-hover-grayscale">      
+       </div>
+     </div>
+	 <div class="w3-third">
+       <div class="w3-card-2">
+        <img src="images/5.jpg" style="width:100%;cursor:pointer" 
+        onclick="onClick(this)" class="w3-hover-grayscale">      
+       </div>
+	   </div>
+    <div class="w3-third">
+      <div class="w3-card-2">
+       <img src="images/6.jpg" style="width:100%;cursor:pointer" 
+       onclick="onClick(this)" class="w3-hover-grayscale">        
+      </div>
+	  
+    </div>
+ </div>
+  
+  
+  
+   <div class="w3-row  w3-padding-64">
+  <div class="w3-container w3-third">
+    <p> </p>
+  </div>
+  <div class="w3-container w3-third w3-center w3-padding-32" >
+  <h2 class="w3-border-bottom w3-display-top">  </h2>
+  </div>
+</div>
+<div class="w3-row  w3-padding-32">
+  <div class="w3-container w3-third">
+    <p> </p>
+  </div>
+  <div class="w3-container w3-third w3-center" >
+  <h2 class="w3-border-bottom w3-display-top">  </h2>
+  </div>
+</div>
+  
+  
+  
+
+<div class="w3-row-padding w3-padding-32">
+  <div class="w3-quarter">
+    <div class="w3-card-2">
+      <img src="images/im4.jpg" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-grayscale">      
+    </div>
+  </div>
+  <div class="w3-quarter">
+    <div class="w3-card-2">
+      <img src="images/img6.jpg" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-grayscale">        
+    </div>
+  </div>
+  <div class="w3-quarter">
+    <div class="w3-card-2">
+      <img src="images/im5.jpg" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-grayscale">       
+    </div>
+  </div>
+   <div class="w3-quarter">
+   
+      <p class="w3-opacity  w3-small w3-justify">Κάτω από το ρηχό νερό με τις ροζ αποχρώσεις βρίσκεται ένα δίκτυο ρωγμών μέσα στην λάσπη, που συνθέτει το παζλ πάνω στο οπείο βρίσκονται οι ξέρες της αρμύρας. Καθώς ατένιζα το Site, η δόνηση του έφτανε ως πέρα στον ορίζοντα φέρνοντας κατα νου έναν ακίνητο κυκλώνα, ενώ το φως που τρεμόπαιζε έκανε ολόκληρη την περιοχή να μοιάζει σαν να σείεται. Ένας λανθάνων σεισμός εξαπλωνόταν στην τρεμουλιαστή ησυχία, δημιουργώντας μια αίσθηση ιλίγγου χωρίς κίνηση. Αυτό το site  ήταν ένας περιστροφικός μηχανισμός που περικλειόταν από μια απέραντη σφαιρικότητα.</p>
+   
+  </div>
+</div>
+
+<div class="w3-container w3-half">
+     <p class="w3-opacity  w3-small w3-justify"> Κοιτώντας προς τα κάτω, το βλέμμα σου πάει μία από την μια πλευρά και μία από την άλλη, ξεδιαλέγοντας τυχαίες εναποθέσεις κρυστάλλων αλατιού στα εσωτερικά ή εξωτερικά άκρα, ενώ ο συνολικός όγκος καθρεφτίζει το ακανόνιστο του ορίζοντα. </p>
+
+</div> 
+
+<div class="w3-row-padding w3-margin-top w3-padding-32">
+  <div class="w3-quarter">
+    <div class="w3-card-2">
+      <img src="images/img7.jpg" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-grayscale">      
+    </div>
+  </div>
+  <div class="w3-quarter">
+    <div class="w3-card-2">
+      <img src="images/img8.jpg" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-grayscale">        
+    </div>
+  </div>
+  <div class="w3-quarter">    
+     <p class="w3-opacity  w3-small w3-justify"> Το νερό λειτουργούσε ως ένας τεράστιος θερμικός καθρέφτης. Από εκείνη τη θέση, η φλεγόμενη αντανάκλαση έφερνε κατά νου την πηγή ιόντων ενός κυκλότοπου, η οποία εκτεινόταν σε ένα στρόβιλο κατακρημνισμένων υλικών. Κάθε αίσθηση ενεργειακής επιτάχυνσης εξέπνευσε μέσα στην περιδινούμενη ακινησία της καθρεφτισμένης θερμότητας. </p>  
+  </div>
+  <div class="w3-quarter">
+    <div class="w3-card-2">
+      <img src="images/img9.jpg" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-grayscale">       
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding">
+     <div class="w3-container w3-half">
+	 <p> </p>
+	 </div> 
+     <div class="w3-container w3-half">
+     <p class="w3-opacity  w3-small w3-justify">  Ήταν λες και την ξηρά τη διαπερνούσαν κύματα και παλμικότητες, ενώ η λίμνη έμενε σταθερή σαν βράχος. Η όχθη της λίμνης έγινε η άκρη του ήλιου, μια καμούλη σε αναβρασμό, μια έκρηξη που υψωνόταν σε φλογερή κλιμάκωση. </p>
+     </div> 
+</div> 
+
+<div class="w3-row-padding">
+  <div class="w3-quarter">
+    <div class="w3-card-2">
+      <img src="images/img10.jpg" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-grayscale">      
+    </div>
+  </div>
+  <div class="w3-quarter">
+         <p class="w3-opacity  w3-small w3-justify"> Έχει κανείς την τάση να βλέπει στους χάρτες πράγματα που δεν υπάρχουν. Ένας μικροφακός εφαρμοσμένος στο άκρο μιας φωτογραφικής μηχανής στιρηγμένης πάνω σε ένα στιβαρό τρίποδο θα ανίχνευε την τροχιά των ¨απόντων εικόνων¨ στα κενά διαστήματα του χάρτη. Η μηχανή σάρωνε από τα δεξιά προς τα αριστερά. </p>
+  </div>
+  <div class="w3-quarter">
+    <div class="w3-card-2">
+      <img src="images/img11.jpg" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-grayscale">        
+    </div>
+  </div>
+  <div class="w3-quarter">
+    <div class="w3-card-2">
+      <img src="images/img12.jpg" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-grayscale">       
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding">
+  
+     <div class="w3-container w3-half">
+     <p class="w3-opacity  w3-small w3-justify"> Οι δρόμοι στον χάρτη γινόταν ένα πλέγμα από διακεκομμένες γραμμές, ενώ η λίμνη διαγραφόταν στον ορίζοντα σαν ένα σπασμένο ασημένιο βραχιόλι. Οι λόφοι άρχισαν να μοιάζουν με λιωμένες μάζες, καθώς πλύριζαν με ένα καχριμπαρένιο φως. Πήραμε δρόμους που δεν κατέληγαν πουθενά, φτάνοντας σε αδιέξοδο. Αμμουδερές πλαγιές έμοιαζαν με πηχτές μάζες αντίληψης. Κινούμενοι αργά, φτάσαμε κοντά στη λίμνη, που έμοιαζε με αδρανές καταπέτασμα σε αχνό βιολετί χρώμα, παγιδευμένο μέσα σε μια πέτρινη μήτρα, πάνω στο οποίο ο ήλιος άδοιαζε το εξωντοτικό του φως</p>
+     </div> 
+	 <div class="w3-container w3-quarter">
+	 <p> </p>
+	 </div>
+</div> 
+
+
+ <div class="w3-row  w3-padding-64">
+  <div class="w3-container w3-third">
+    <p> </p>
+  </div>
+  <div class="w3-container w3-third w3-center w3-padding-32" >
+  <h2 class="w3-border-bottom w3-display-top">  </h2>
+  </div>
+</div>
+<div class="w3-row  w3-padding-32">
+  <div class="w3-container w3-third">
+    <p> </p>
+  </div>
+  <div class="w3-container w3-third w3-center" >
+  <h2 class="w3-border-bottom w3-display-top">  </h2>
+  </div>
+</div>
+
+
+
+<div class="w3-row-padding w3-section">
+  <div class="w3-col s4">
+    <div class="w3-card-2">
+      <img src="images/map3.gif" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-grayscale">       
+    </div>
+  </div>
+  <div class="w3-col s4">
+    <div class="w3-card-2">
+      <img src="images/map4.gif" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-grayscale">       
+    </div>
+  </div>
+  <div class="w3-col s4">
+    <div class="w3-card-2">
+      <img src="images/map5.gif" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-grayscale">       
+    </div>
+  </div>
+</div>
+<p class="w3-opacity  w3-small w3-center"> Υδατογραφίες </p> 
+
+<div class="w3-row-padding w3-section">
+  <div class="w3-col s6">
+    <div class="w3-card-2">
+      <img src="images/map6.gif" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-grayscale">       
+    </div>
+  </div>
+  <div class="w3-col s6">
+    <div class="w3-card-2">
+      <img src="images/map7.gif" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-grayscale">       
+    </div>
+  </div>
+</div>
+
+<p class="w3-opacity  w3-small w3-center"> Ανεμογραφίες</p>
+
+<div class="w3-row-padding w3-section">
+  <div class="w3-col s4">
+    <div class="w3-card-2">
+      <img src="images/map10.gif" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-grayscale">       
+    </div>
+  </div>
+  <div class="w3-col s4">
+    <div class="w3-card-2">
+      <img src="images/map11.gif" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-grayscale">       
+    </div>
+  </div>
+  <div class="w3-col s4">
+    <div class="w3-card-2">
+      <img src="images/map12.gif" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-grayscale">       
+    </div>
+  </div>
+</div>
+
+<p class="w3-opacity  w3-small w3-center"> Κυματογραφίες </p>
+
+<div class="w3-row-padding w3-section">
+  <div class="w3-col s4">
+    <div class="w3-card-2">
+      <img src="images/map8.1.gif" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-grayscale">       
+    </div>
+	<p class="w3-opacity  w3-small w3-center"> Περιδινήσεις στην επιφάνεια του νερού </p>
+  </div>
+  <div class="w3-col s4">
+    <div class="w3-card-2">
+      <img src="images/edafos.gif" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-grayscale">       
+    </div>
+  </div>
+  <div class="w3-col s4">
+    <div class="w3-card-2">
+      <img src="images/map9.gif" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-grayscale">       
+    </div>
+	<p class="w3-opacity  w3-small w3-center"> Περιδινήσεις στην επιφάνεια του νερού </p>
+ 
+  </div>
+</div>
+
+<p class="w3-opacity  w3-small w3-center"> Εδαφογραφίες </p>
+
+ <div class="w3-row  w3-padding-64">
+  <div class="w3-container w3-third">
+    <p> </p>
+  </div>
+  <div class="w3-container w3-third w3-center w3-padding-32" >
+  <h2 class="w3-border-bottom w3-display-top">  </h2>
+  </div>
+</div>
+
+
+
+<div class="w3-content">
+  <div class="w3-container w3-center w3-padding-32" id="Απτικοί Χάρτες">
+  <h2 class="w3-border-bottom w3-center w3-display-top"> Χαρτογραφία</h2>
+  
+  </div> 
+</div>
+
+
+<div class="w3-row-padding w3-center w3-margin-top w3-padding-64">
+<div class="w3-quarter w3-center"> 
+      <img src="images/xa3.jpg" style="width:90%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-grayscale">  
+    <p class="w3-opacity  w3-small w3-center"> Agnese Battista, 
+       Marciana - Cartografia manoscritta </p>	
+     </div>
+  <div class="w3-quarter w3-center">
+ 
+      <img src="images/xa1.jpg" style="width:90%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-grayscale">      
+
+   <p class="w3-opacity  w3-small w3-center">  Πορτολάνος, 1554, Agnese Battista, 
+       Marciana</p>
+
+  </div>
+   <div class="w3-quarter w3-center">
+   
+      <img src="images/xa2.jpg" style="width:90%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-grayscale">  
+     <p class="w3-opacity w3-small w3-center">  Ναυμαχία της Ναυπάκτου, G.P. Contarini, Βενετία, 1572 </p>	
+   </div>
+   
+	 <div class="w3-quarter w3-center">
+ 
+      <img src="images/xa4.jpg" style="width:50%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-grayscale">      
+    <p class="w3-opacity  w3-small w3-center">G. Weigand Gustav, 1890 </p>
+  </div>
+  </div>
+ 
+
+ <div class="w3-row-padding w3-content">
+  <div class="w3-col s6 w3-center">
+   
+      <img src="images/map2.jpg" style="width:85%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-grayscale">       
+   <p class="w3-opacity  w3-small w3-center">νήσος της φοινικιάς</p>
+  </div>
+  <div class="w3-col s6 w3-center">
+   
+      <img src="images/map12.jpg" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-grayscale">       
+    <p class="w3-opacity  w3-small w3-center">νήσος της φοινικιάς με αλατοπηγία </p>
+ 
+  </div>
+</div>
+
+  
+ <div class="w3-row  w3-padding-64">
+  <div class="w3-container w3-third">
+    <p> </p>
+  </div>
+  <div class="w3-container w3-third w3-center w3-padding-32" >
+  <h2 class="w3-border-bottom w3-display-top">  </h2>
+  </div>
+</div>
+<div class="w3-row  w3-padding-32">
+  <div class="w3-container w3-third">
+    <p> </p>
+  </div>
+  <div class="w3-container w3-third w3-center" >
+  <h2 class="w3-border-bottom w3-display-top">  </h2>
+  </div>
+</div>
+
+
+
+<div class="w3-content " style="width:60%" >
+<div class="w3-display-container w3-padding-64" >
+
+   <div class="w3-row-padding w3-margin-top w3-padding-64">
+  <div class="w3-half">
+   <div class="w3-card-2">
+      <img src="images/inuitcartography.jpg" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-grayscale">
+	</div> 
+	<p class="w3-opacity w3-small w3-center">Σύγκριση χαρτών </p>
+	</div>
+  <div class="w3-half">
+    <div class="w3-card-2">
+      <img src="images/bulletin-natural-history-science-godthaab-angmagssalik-75-above-eskimo-made-maps-carved-of-wood-from-angmagssalik-in-quotgreenland-arctic-denmarkquot-exhibit-at-field-fwluseum-through-ivlarch-8-larg.jpg" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-grayscale">
+	</div> 
+	<p class="w3-opacity w3-small w3-center"> Απτικοί ξύλινοι χάρτες των Ίνουιτ</p> 
+	
+  </div>
+	</div>  
+ </div>
+  </div>
+
+
+<div class="w3-row-padding w3-margin-top w3-padding-64">
+  <div class="w3-third">
+    <div class="w3-card-2">
+      <img src="images/hap1.jpg" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-grayscale">      
+    </div>
+  </div>
+  <div class="w3-third">
+    <div class="w3-card-2">
+      <img src="images/hap2.jpg" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-grayscale">        
+    </div>
+  </div>
+  <div class="w3-third">
+    <div class="w3-card-2">
+      <img src="images/hap3.jpg" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-grayscale">       
+    </div>
+  </div>
+</div>
+
+  <div class="content">
+<p class="w3-opacity  w3-small w3-center">Απτικοί χάρτες </p>
+</div>
+ 
+
+
+ <div class="w3-row  w3-padding-64">
+  <div class="w3-container w3-third">
+    <p> </p>
+  </div>
+  <div class="w3-container w3-third w3-center w3-padding-32" >
+  <h2 class="w3-border-bottom w3-display-top">  </h2>
+  </div>
+</div>
+<div class="w3-row  w3-padding-32">
+  <div class="w3-container w3-third">
+    <p> </p>
+  </div>
+  <div class="w3-container w3-third w3-center" >
+  <h2 class="w3-border-bottom w3-display-top">  </h2>
+  </div>
+</div>
+
+<div class="w3-opacity w3-center w3-margin-bottom">
+<span class="w3-button w3-large w3-grey w3-center" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+</div>
+
+
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-text-white  w3-hover-text-grey w3-container w3-display-topright">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom w3-black">
+    <img id="img01" style="width:100%">
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+
+
+function myFunction() {
+    document.getElementById("panel").style.display = "block";
+}
+</script>
+
+
+
+</body>
+</html>
